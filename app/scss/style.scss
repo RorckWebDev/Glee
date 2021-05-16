@@ -81,11 +81,27 @@
     background-color: #fcd7b6;
     border-radius: 25px;
     margin: 0 18px 0 21px;
+
 }
 .double-btn-left
 {
     padding: 12px 0px 12px 40px;
     position: relative;
+}
+.double-btn-left .user-nav-img
+{
+    margin-right: 30px;
+}
+.double-btn-divisor
+{
+    width: 1px;
+    height: 32px;
+    opacity: 0.4;
+    background-color: #ffffff;
+}
+.double-btn-right .user-nav-img
+{
+    margin-right: 40px;
 }
 .double-btn-right
 {
@@ -95,12 +111,13 @@
 .user-nav-counter
 {
     position: absolute;
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     font-size: 10px;
-    top: 0;
-    right: 0;
-    padding: 5px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-top: -25px;
+    text-align: center;
     background-color: #fff;
     border-radius: 50%;
 }
