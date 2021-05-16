@@ -1,4 +1,1 @@
-$(function z() {
-    return z.bind
-    
-})
+$('.single-item').slick();
