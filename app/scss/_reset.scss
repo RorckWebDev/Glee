@@ -31,7 +31,7 @@ html{
   dd {
     margin: 0;
   }
-  
+  a{text-decoration: none; color: inherit;display: block;}
   ul[class] {
     list-style: none;
   }

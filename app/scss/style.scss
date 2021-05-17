@@ -3,7 +3,7 @@
 @import 'reset';
 
 @import 'global';
-@import 'media';
+
 
 .header-top
 {
@@ -50,8 +50,6 @@
     }
     &-link
     {
-        font-family: Rubik;
-        font-weight: 500;
         text-decoration: none;
         color: #436372;
     }
@@ -147,7 +145,6 @@
 .header-slider
 {
     background-color: #fcd7b6;
-    font-family: Rubik;
     position: relative;
     max-width: 1770px;
     padding: 0 15px;
@@ -189,6 +186,7 @@
     }
     &-subtitle
     {
+        @extend %rub-r;
         max-width: 360px;
         font-size: 18px;
         line-height: 30px;
@@ -224,3 +222,46 @@
     margin: 0 auto;
     background-color: #fef7f0;
 }
+
+
+
+
+
+/*Footer*/
+.footer-top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top__section
+{
+    width: auto;
+    text-decoration: none;
+    &-adress
+    {
+        max-width: 200px;
+        margin: 23px 0 23px;
+    }
+    &-phone
+    {
+        margin-bottom: 5px;
+    }
+}
+.footer-title
+{
+    @extend %dms-b;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #1f2044;
+    margin: 25px 0 29px;
+}
+.footer-top__section-item
+{
+    line-height: 32px;
+}
+
+
+
+
+@import 'media';
