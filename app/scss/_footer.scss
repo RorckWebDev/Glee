@@ -15,10 +15,12 @@
     {
         max-width: 200px;
         margin: 23px 0 23px;
+        display: block;
     }
     &-phone
     {
         margin-bottom: 5px;
+        display: block;
     }
 }
 .footer-title
@@ -33,11 +35,6 @@
 .footer-top__section-item
 {
     line-height: 32px;
-}
-.footer-top__section-phone, 
-.footer-top__section-mail
-{
-    display: block;
 }
 .footer-top__section-description
 {
@@ -65,14 +62,15 @@
         border: none;
         background-color: #a3bbc8;
         padding: 0 19px 0 16px;
+        cursor: pointer;
     }
 }
 .footer-copy
 {
+    height: 90px;
     display: flex;
     justify-content: space-between;
-    margin-top: 34px;
-    margin-bottom: 40px;
+    align-items: center;
     &__list
     {
         display: flex;
@@ -80,7 +78,7 @@
     &__list-item
     {
         position: relative;
-        line-height: 34px;
+
         padding-left: 15px;
         padding-right: 15px
     }
