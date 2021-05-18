@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'footer';
 
 @import 'global';
 
@@ -227,98 +228,7 @@
 
 
 
-/*Footer*/
-.footer-top
-{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #a3bbc8;
-    margin-top: 80px;
-    padding-bottom: 75px;
-}
-.footer-top__section
-{
-    width: auto;
-    text-decoration: none;
-    &-adress
-    {
-        max-width: 200px;
-        margin: 23px 0 23px;
-    }
-    &-phone
-    {
-        margin-bottom: 5px;
-    }
-}
-.footer-title
-{
-    @extend %dms-b;
-    font-size: 16px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #1f2044;
-    margin: 25px 0 29px;
-}
-.footer-top__section-item
-{
-    line-height: 32px;
-}
-.footer-top__section-phone, .footer-top__section-mail
-{
-    display: block;
-}
-.footer-top__section-description
-{
-    max-width: 220px;
-    padding-top: 4px;
-    margin-bottom: 38px;
-}
-.footer-top__section-form
-{
-    display: flex;
-    &-input
-    {
-        width: 170px;
-        height: 38px;
-        font-size: 12px;
-        border: none;
-        background-color: #fcd7b6;
-        padding-left: 16px;
-    }
-    &-btn
-    {
-        line-height: 21px;
-        max-width: 100px;
-        height: 38px;
-        border: none;
-        background-color: #a3bbc8;
-        padding: 0 19px 0 16px;
-    }
-}
-.footer-copy
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 34px;
-    margin-bottom: 40px;
-    &__list
-    {
-        display: flex;
-    }
-    &__list-item
-    {
-        position: relative;
-        line-height: 34px;
-        padding-left: 15px;
-        padding-right: 15px
-    }
-    &__list-item:not(:last-child):after
-    {
-        position: absolute;
-        content: '|';
-        margin-left: 15px;
-    }
-}
+
 
 
 
