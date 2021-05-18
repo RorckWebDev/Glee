@@ -232,6 +232,8 @@
 {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #a3bbc8;
+    margin-top: 80px;
 }
 .footer-top__section
 {
@@ -260,7 +262,63 @@
 {
     line-height: 32px;
 }
-
+.footer-top__section-phone, .footer-top__section-mail
+{
+    display: block;
+}
+.footer-top__section-description
+{
+    max-width: 220px;
+    padding-top: 4px;
+    margin-bottom: 38px;
+}
+.footer-top__section-form
+{
+    margin-bottom: 154px;
+    display: flex;
+    &-input
+    {
+        width: 170px;
+        height: 38px;
+        font-size: 12px;
+        border: none;
+        background-color: #fcd7b6;
+        padding-left: 16px;
+    }
+    &-btn
+    {
+        line-height: 21px;
+        max-width: 100px;
+        height: 38px;
+        border: none;
+        background-color: #a3bbc8;
+        padding: 0 19px 0 16px;
+    }
+}
+.footer-copy
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-bottom: 40px;
+    &__list
+    {
+        display: flex;
+    }
+    &__list-item
+    {
+        position: relative;
+        line-height: 34px;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    &__list-item:not(:last-child):after
+    {
+        position: absolute;
+        content: '|';
+        margin-left: 15px;
+    }
+}
 
 
 
