@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 @import 'header';
 @import 'footer';
@@ -31,7 +32,7 @@
     }
     &-inner
     {
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
         align-items: flex-end;
         padding-top: 225px;
@@ -86,6 +87,33 @@
     height: 170px;
     margin: 0 auto;
     background-color: #fef7f0;
+}
+
+ul.slick-dots
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 207px;
+    
+}
+ul.slick-dots button
+{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    opacity: 0.3;
+    color: #243f4d;
+    border: none;
+    border-radius: 50%;
+    margin-right: 11px;
+    cursor: pointer;
+}
+ul .slick-active button
+{
+    background-color: #fff;
+    opacity: 1;
+    color: #243f4d;
+
 }
 
 
