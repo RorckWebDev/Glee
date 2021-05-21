@@ -1,6 +1,21 @@
+html, body{height: 100%;}
+.wrapper{display: flex;flex-direction: column; height: 100%;}
+
 .container
 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+.header
+{
+    @extend %rub-m;
+}
+.footer
+{
+    @extend %rub-r;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7b7b7b;
+}
+.main{flex-grow: 1;}

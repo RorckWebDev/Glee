@@ -31,14 +31,14 @@ html{
   dd {
     margin: 0;
   }
-  
+  a{text-decoration: none; color: inherit;}
   ul[class] {
     list-style: none;
   }
   
   img {
     max-width: 100%;
-    display: block;
+    display: inline-block;
   }
   
   input,
