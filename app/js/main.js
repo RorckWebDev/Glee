@@ -5,5 +5,6 @@ $(function (){
         fade: true,
         autoplay: true
     });
+    var mixer = mixitup('.catalog__list');
 
 });
