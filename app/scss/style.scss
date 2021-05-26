@@ -550,6 +550,7 @@ ul .slick-active button
     {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         &-viewall
         {
             padding-right: 25px;
@@ -561,7 +562,7 @@ ul .slick-active button
                 position: absolute;
                 width: 7px;
                 height: 12px;
-                top: 2px;
+                top: 4px;
                 right: 0;
             }
         }
@@ -607,13 +608,14 @@ ul .slick-active button
             padding: 36px 27px 0px 28px;
             background-color: #fff;
             display: grid;
+            align-content: space-between;
          
         }
         &-title{
             display: block;
             @extend %dms-m;
-            height: 56px;
-            padding-bottom: 18px;
+            height: 58px;
+            line-height: 1.2;
             font-size: 18px;
             color: #262626;
             padding-left: 2px;
@@ -625,6 +627,8 @@ ul .slick-active button
             display: flex;
             align-items: center;
             font-size: 12px;
+            line-height: 30px;
+            padding: 13px 0;
             border-top: 1px solid #e0e0e0;
         }
         &-date
@@ -657,5 +661,119 @@ ul .slick-active button
 }
 
 
+
+/*Login page*/
+.header-login
+{
+    background-color: #edf1f4;
+    height: 125px;
+    margin-bottom: 120px;
+    &__inner
+    {   
+        padding-top: 35px;
+        text-align: center;
+    }
+}
+.top-title
+{
+    @extend %rub-l;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    margin-bottom: 10px;
+}
+
+.login-page__sponsors
+{
+    background-color: #fff7f0;
+    padding: 82px 89px;
+    &__img-box
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+.login-block
+{
+    max-width: 470px;
+    margin: 0 auto;
+    &__inner
+    {
+        @extend %rub-r;
+        font-size: 14px;
+        color: #436372;
+    }
+    &__form-label
+    {   
+        line-height: 1;
+        margin-bottom: 28px;
+        display: block;
+    }
+    &__form-input
+    {
+        width: 100%;
+        height: 60px;
+        padding: 0 15px;
+        display: block;
+        margin-top: 10px;
+        border: 2px solid #f6f6f6;
+    }
+    &__form-btn
+    {
+        @extend %rub-m;
+        font-size: 18px;
+        width: 100%;
+        height: 60px;
+        border: none;
+        color: #fff;
+        background-color: #a3bbc8;
+        cursor: pointer;
+    }
+    &__form-lostlink
+    {
+        padding-top: 3px;
+    }
+
+}
+.form__box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 2px solid #f6f6f6;
+    margin-top: 35px;
+    margin-bottom: 33px;
+    & .login-block__form-label
+    {
+        margin-bottom: 26px;
+    }
+}
+.createacc
+{
+    text-align: center;
+    margin-bottom: 120px;
+    &-title
+    {
+        @extend %rub-r;
+        font-size: 14px;
+        color: #436372;
+        margin-bottom: 24px;
+    }
+    &-link
+    {
+        @extend %rub-m;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #243f4d;
+        height: 60px;
+        align-content: center;
+        border: 2px solid #a3bbc8;
+    }
+}
 
 @import 'media';
