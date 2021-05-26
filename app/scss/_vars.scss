@@ -28,6 +28,11 @@
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
 }
+%rub-l
+{
+    font-family: 'Rubik-Light', sans-serif;
+    font-weight: 300;
+}
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }

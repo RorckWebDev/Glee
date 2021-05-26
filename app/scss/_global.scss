@@ -19,3 +19,37 @@ html, body{height: 100%;}
     color: #7b7b7b;
 }
 .main{flex-grow: 1;}
+.breadcrumbs
+{
+    &-items
+    {
+        display: inline-flex;
+    }
+    &-item
+    {
+        @extend %rub-m;
+        opacity: 0.6;
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 18px;
+        color: #222933;
+        position: relative;
+        &::after
+        {
+            position: absolute;
+            content: '/';
+            right: 0;
+            margin-right: 5px;
+        }
+        &:last-child
+        {
+            padding-right: 0px;
+            transform: scale(1.2);
+            &::after
+            {
+                display: none;
+            }
+        }
+    
+    }
+}
