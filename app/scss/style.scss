@@ -667,7 +667,7 @@ ul .slick-active button
 {
     background-color: #edf1f4;
     height: 125px;
-    margin-bottom: 120px;
+
     &__inner
     {   
         padding-top: 35px;
@@ -754,7 +754,7 @@ ul .slick-active button
 .createacc
 {
     text-align: center;
-    margin-bottom: 120px;
+
     &-title
     {
         @extend %rub-r;
@@ -809,8 +809,29 @@ ul .slick-active button
     }
 }
 
+/*About us page*/
 
-
+.about
+{
+    &-content
+    {
+        display: flex;
+    }
+    &__info-block
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__info-top
+    {
+        display: flex;
+    }
+    &__info-bottom
+    {
+        display: flex;
+    }
+}
 
 
 @import 'media';
