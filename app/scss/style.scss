@@ -776,4 +776,41 @@ ul .slick-active button
     }
 }
 
+
+/*Terms & Conditions page*/
+
+.terms
+{
+    &__title
+    {
+        @extend %rub-m;
+        font-size: 24px;
+        color: #243f4d;
+        line-height: 1;
+    }
+    &__counter-list
+    {
+        margin-top: 33px;
+        display: flex;
+    }
+    &__counter
+    {
+    
+        @extend %rub-r;
+        font-size: 16px;
+        color: #243f4d;
+        padding: 0 10px 0 5px;
+    }
+    &__text
+    {
+        @extend %rub-r;
+        font-size: 16px;
+        color: #243f4d;
+    }
+}
+
+
+
+
+
 @import 'media';
