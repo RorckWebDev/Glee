@@ -667,7 +667,7 @@ ul .slick-active button
 {
     background-color: #edf1f4;
     height: 125px;
-    margin-bottom: 120px;
+
     &__inner
     {   
         padding-top: 35px;
@@ -754,7 +754,7 @@ ul .slick-active button
 .createacc
 {
     text-align: center;
-    margin-bottom: 120px;
+
     &-title
     {
         @extend %rub-r;
@@ -775,5 +775,208 @@ ul .slick-active button
         border: 2px solid #a3bbc8;
     }
 }
+
+
+/*Terms & Conditions page*/
+
+.terms
+{
+    &__title
+    {
+        @extend %rub-m;
+        font-size: 24px;
+        color: #243f4d;
+        line-height: 1;
+    }
+    &__counter-list
+    {
+        margin-top: 33px;
+        display: flex;
+    }
+    &__counter
+    {
+    
+        @extend %rub-r;
+        font-size: 16px;
+        color: #243f4d;
+        padding: 0 10px 0 5px;
+    }
+    &__text
+    {
+        @extend %rub-r;
+        font-size: 16px;
+        color: #243f4d;
+    }
+}
+
+/*About us page*/
+
+.about
+{
+    &-content
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info-block
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__info-top
+    {
+        display: flex;
+    }
+    &__info-center
+    {
+        
+        @extend %rub-r;
+        color: #243f4d;
+    }
+    &__info-bottom
+    {
+        display: flex;
+        border-top: 1px solid rgba($color: #09316f, $alpha: 0.1);
+        padding-top: 30px;
+    }
+}
+.top
+{
+    &__num
+    {
+        @extend %rub-b;
+        font-size: 140px;
+        color: #a3bbc8;
+    }
+    &__boxlist
+    {
+        padding-top: 50px;
+        margin-left: 30px;
+    }
+    &__item
+    {
+        @extend %rub-r;
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+    }
+}
+.center
+{
+    &__title
+    {
+        @extend %dms-b;
+        font-size: 36px;
+        line-height: 32px;
+    }
+    &__text
+    {   
+        max-width: 551px;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 50px 0 64px;
+    }
+}
+
+.bottom
+{
+    &__box
+    {
+        display: flex;
+        align-items: center;
+        &:not(:first-child)
+        {
+            padding-left: 28px;
+        }
+
+    }
+    &__box-content
+    {
+        @extend %dms-b;
+        margin-left: 20px;
+        padding-right: 26px;
+        border-right: 1px solid rgba($color: #09316f, $alpha: 0.1);
+    }
+    &__box-title
+    {
+        font-size: 36px;
+        line-height: 38px;
+        color: #243f4d;
+    }
+    &__box-subtitle
+    {
+        font-size: 16px;
+        line-height: 17px;
+        color: #4c4c4c;
+    }
+}
+.bottom-last-child
+{
+    border-right: none;
+}
+
+/*benefits*/
+
+.benefits
+{
+    background-color: #fcd7b6;
+    @extend %dms-b;
+    line-height: 1;
+    color: #243f4d;
+    &__inner
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 80px 0;
+    }
+    &__box
+    {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__box-img
+    {
+        width: 70px;
+        height: 67px;
+        position: relative;
+        &::after
+        {
+            content: '';
+            position: absolute;
+            right: -6px;
+            bottom: 0;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: rgba($color: #a3bbc8, $alpha: 0.5);              
+        }
+    }
+    &__box-img_fir
+    {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__box-img_sec
+    {
+        display: flex;
+        align-items: inherit;
+    }
+    &__title
+    {
+        font-size: 36px;
+        margin: 20px 0;
+    }
+    &__text
+    {
+        font-size: 18px;
+
+    }
+}
+
 
 @import 'media';
