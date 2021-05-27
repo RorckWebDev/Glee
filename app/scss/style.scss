@@ -916,7 +916,7 @@ ul .slick-active button
     border-right: none;
 }
 
-/*benefits*/
+/*benefits section*/
 
 .benefits
 {
@@ -977,6 +977,120 @@ ul .slick-active button
 
     }
 }
+/*Team section*/
+.team
+{
+    &__inner
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text-title
+    {
+        @extend %dms-b;
+        font-size: 36px;
+        line-height: 32px;
+        color: #243f4d;
+    }
+    &__text-description
+    {
+        @extend %rub-r;
+        max-width: 310px;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        margin: 30px 0 40px;
+        
+    }
+    &__text-link
+    {
+        position: relative;
+        @extend %pop-sb;
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        line-height: 55px;
+        color: #ffffff;
+        width: 170px;
+        height: 50px;
+        background-color: #a3bbc8;
+        padding-right: 40px;
+        border-radius: 5px;
+        &::after
+        {
+            position: absolute;
+            content: '';
+            background: url(../images/about/team/team_arrow-icon.svg) no-repeat;
+            top: 18px;
+            right: 20px;
+            width: 17px;
+            height: 15px;
+            
+        }
+    }
+    &__photo
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 40px
+        
+    }
+    &__photo-description
+    {
+        position: relative;
+        width: 325px;
+        height: 111px;
+        background-color: #fff;
+        box-shadow: 0px 6px 57px 0px rgba(37,37,37,0.05);
+        z-index: 999;
+        margin-top: -50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    &__photo-name
+    {
+        @extend %dms-b;
+        font-size: 22px;
+        line-height: 26px;
+        color: #436372;
+    }
+    &__photo-vocation
+    {
+        @extend %rub-r;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+    }
+    &__photo-social
+    {
+        display: flex;
+    }
+    &__photo-social-wrapper
+    {
+        width: 41px;
+        height: 41px;
+        background-color: #f6f6f6;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:first-child
+        {
+            margin-right: 7px;
+        }
+    }
+}
+
+
+
+
+
+
+
 
 
 @import 'media';

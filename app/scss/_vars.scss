@@ -38,6 +38,11 @@
     font-family: 'Rubik-Bold', sans-serif;
     font-weight: 700;
 }
+%pop-sb
+{
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-weight: 600;
+}
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
