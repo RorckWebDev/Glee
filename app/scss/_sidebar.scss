@@ -1,0 +1,238 @@
+.product__sidebar
+{
+    max-width: 270px;
+    width: 100%;
+}
+/*Drop меню*/
+.dropmenu
+{   
+    &__items
+    {
+        @extend %rub-r;
+        font-size: 16px;
+        line-height: 43px;
+        color:#243f4d;
+        
+    }
+    &__link
+    {
+        display: block;
+    }
+    &__item
+    {
+        position: relative;
+        width: 270px;
+        height: 43px;
+        border-radius: 5px;
+        padding-left: 14px;
+        transition: all 0.5s;
+        &:hover
+        {
+            background-color: rgba($color: #a3bbc8, $alpha: 0.2);
+            
+            .dropmenu__items--hidden
+            {
+                display: block;
+                opacity: 1;
+            } 
+        }
+        &::after
+        {
+            content: '';
+            position: absolute;
+            background: url(../images/arrow-right.svg) no-repeat;
+            width: 7px;
+            height: 12px;
+            top: 16px;
+            right: 22px;
+        }
+    }
+    &__btn--hidden
+    {
+        width: 200px;
+        height: 43px;       
+        border-radius: 5px;
+        background-color: rgba($color: #a3bbc8, $alpha: 0.4);
+        cursor: pointer;
+        border: none;
+        margin-bottom: 2px;
+    }
+    &__items--hidden
+    {
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        left: 280px;
+        transition: all 0.3s;
+    }
+
+}
+.sidebar
+{
+    &-title
+    {
+        @extend %dms-b;
+        font-size: 18px;
+        line-height: 1.2;
+        color: #243f4d;
+        position: relative;
+        margin-bottom: 30px;
+        &::after
+        {
+            content: '';
+            position: absolute;
+            width: 39px;
+            height: 3px;
+            top: 7px;
+            margin-left: 15px;
+            background-color: #a3bbc8;
+            border-radius: 1px;
+        }
+    }
+    &-price__form-filter
+    {
+        @extend %rub-r;
+        font-size: 14px;
+        line-height: 43px;
+        color: #243f4d;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-recent__items
+    {
+        display: flex;
+        margin-bottom: 23px;
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+    }
+    &-recent__imgbox
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        width: 71px;
+        height: 71px;
+        object-fit: cover;
+        background-color: rgba(255,255,255,0.96);
+        border: 2px solid #f2f2f2; 
+    }
+    &-recent__info
+    {
+        @extend %rub-r;
+        color: #333333;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &-recent__info-price
+    {
+        font-size: 15px;
+    } 
+}
+/*BRAND filter*/
+
+.sidebar-brand
+{
+    &__inputitem
+    {
+        @extend %rub-r;
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+    
+    }
+    &__input
+    {
+        @extend %checkbox-hidden;
+        &:checked + .sidebar-brand__input-spanbox
+	    {	
+            transition: all 0.3s;
+		    background-color: #a3bbc8;
+            color: #243f4d;
+	    }
+    }
+    &__input-spanbox
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 43px;
+        color: #b3b3b3;
+        padding-left: 15px;
+        padding-right: 24px;
+        border-radius: 5px;
+        user-select: none;
+        
+    }
+    &__spannum
+    {
+        &::before
+        {
+            content: '(';
+            position: relative;
+            top: -1px;
+        }
+        &::after
+        {
+            content: ')';
+            position: relative;
+            top: -1px;
+        }
+    }
+}
+
+
+
+/*Slider Price filter*/
+
+.irs-min,.irs-max,.irs-from,.irs-to,.irs-single
+{
+    display: none;
+}
+.sidebar-price .mb-0
+{
+    margin-bottom: 0;
+}
+.irs--flat .irs-line 
+{
+    top: 8px;
+    height: 3px;
+    opacity: 0.65;
+    background-color: #a3bbc8;
+    border-radius: 1px;
+}
+.irs--flat .irs-bar 
+{
+    top: 8px;
+    height: 4px;
+    background-color: #a3bbc8;
+    border-radius: 0.4px;
+}
+.irs--flat .irs-handle 
+{
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    background-color: #a3bbc8;
+}
+.irs--flat .irs-handle>i:first-child
+{
+    display: none;
+}
+.irs--flat 
+{
+    height: 15px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/*Звездный рейтинг*/
+.jq-ry-container
+{
+    padding: 0;
+}
