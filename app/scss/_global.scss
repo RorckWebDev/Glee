@@ -64,66 +64,11 @@ html, body{height: 100%;}
 {
     margin-bottom: 25px;
 }
-
-.dropmenu
-{   
-    &__items
-    {
-        @extend %rub-r;
-        font-size: 16px;
-        line-height: 43px;
-        color:#243f4d;
-        
-    }
-    &__link
-    {
-        display: block;
-    }
-    &__item
-    {
-        position: relative;
-        width: 270px;
-        height: 43px;
-        border-radius: 5px;
-        padding-left: 14px;
-        transition: all 0.5s;
-        &:hover
-        {
-            background-color: rgba($color: #a3bbc8, $alpha: 0.2);
-            
-            .dropmenu__items--hidden
-            {
-                display: block;
-                opacity: 1;
-
-            } 
-        }
-        &::after
-        {
-            content: '';
-            position: absolute;
-            background: url(../images/arrow-right.svg) no-repeat;
-            width: 7px;
-            height: 12px;
-            top: 16px;
-            right: 22px;
-        }
-    }
-    &__btn--hidden
-    {
-        width: 200px;
-        height: 43px;       
-        border-radius: 5px;
-        background-color: rgba($color: #a3bbc8, $alpha: 0.4);
-        cursor: pointer;
-    }
-    &__items--hidden
-    {
-        opacity: 0;
-        position: absolute;
-        top: 0px;
-        left: 280px;
-        transition: all 0.3s;
-    }
-
+.mb-0
+{
+    margin-bottom: 0;
+}
+.sidebar-price .mb-0
+{
+    margin-bottom: 0;
 }

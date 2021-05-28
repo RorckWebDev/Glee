@@ -42,7 +42,7 @@
                             alt=""></a>
                 </div>
             </div>
-            <div class="header-login">
+            <div class="header-login mb-120">
                 <div class="container">
                     <div class="header-login__inner">
                         <h2 class="top-title">Product list 1</h2>
@@ -65,7 +65,7 @@
             <div class="container">
                 <div class="product__inner">
                     <div class="product__sidebar">
-                        <div class="sidebar-category">
+                        <div class="sidebar-category mb-70">
                             <h3 class="sidebar-title">CATEGORY</h3>
                             <div class="sidebar-category__dropmenu">
                                 <ul class="dropmenu__items">
@@ -143,14 +143,85 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="sidebar-price">
-                            <h3 class="sidebar-title">PRICE</h3>
+                        <div class="sidebar-price mb-70">
+                            <h3 class="sidebar-title mb-0">PRICE</h3>
+                            <form class="sidebar-price__form" action="#">
+                                <input class="sidebar-price__form-input" type="text" data-min="0"
+                                data-max="1000"
+                                data-from="100"
+                                data-to="500">
+                                <div class="sidebar-price__form-filter">
+                                    <div>$<span class="sidebar-price__form-from"></span></div>
+                                    <div>$<span class="sidebar-price__form-to"></span></div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="sidebar-brand">
+                        <div class="sidebar-brand mb-70">
                             <h3 class="sidebar-title">BRAND</h3>
+                            <div class="sidebar-brand__btnbox">
+                                <div class="sidebar-brand__btnitem">
+                                    <button class="sidebar-brand__btn" type="submit">RFL
+                                        <span class="sidebar-brand__span">10</span>
+                                    </button>
+                                </div>
+                                <div class="sidebar-brand__btnitem">
+                                    <button class="sidebar-brand__btn" type="submit">Brothers
+                                        <span class="sidebar-brand__span">21</span>
+                                    </button>
+                                </div>
+                                <div class="sidebar-brand__btnitem">
+                                    <button class="sidebar-brand__btn" type="submit">Regal
+                                        <span class="sidebar-brand__span">3</span>
+                                    </button>
+                                </div>
+                                <div class="sidebar-brand__btnitem">
+                                    <button class="sidebar-brand__btn" type="submit">Nadia
+                                        <span class="sidebar-brand__span">14</span>
+                                    </button>
+                                </div>
+                                <div class="sidebar-brand__btnitem">
+                                    <button class="sidebar-brand__btn" type="submit"> Otobi
+                                        <span class="sidebar-brand__span">6</span>
+                                    </button>
+                                </div>
+                                
+                            </div>
+
                         </div>
                         <div class="sidebar-recent">
                             <h3 class="sidebar-title">RECENT PRODUCTS</h3>
+                            <div class="sidebar-recent__inner">
+                                <a class="sidebar-recent__items" href="#">
+                                    <div class="sidebar-recent__imgbox">
+                                        <img class="sidebar-recent__img" src="images/icon/1.png" alt="small icon">
+                                    </div>
+                                    <div class="sidebar-recent__info">
+                                        <p class="sidebar-recent__info-title">Pendant lamp</p>
+                                        <p class="sidebar-recent__info-rating" data-rateyo-rating="4"></p>
+                                        <p class="sidebar-recent__info-price">23<span>$</span></p>
+                                    </div>
+                                </a>
+                                <a class="sidebar-recent__items" href="#">
+                                    <div class="sidebar-recent__imgbox">
+                                        <img class="sidebar-recent__img" src="images/icon/2.png" alt="small icon">
+                                    </div>
+                                    <div class="sidebar-recent__info">
+                                        <p class="sidebar-recent__info-title">Pendant lamp</p>
+                                        <p class="sidebar-recent__info-rating" data-rateyo-rating="4"></p>
+                                        <p class="sidebar-recent__info-price">23<span>$</span></p>
+                                    </div>
+                                </a>
+                                <a class="sidebar-recent__items" href="#">
+                                    <div class="sidebar-recent__imgbox">
+                                        <img class="sidebar-recent__img" src="images/icon/3.png" alt="small icon">
+                                    </div>
+                                    <div class="sidebar-recent__info">
+                                        <p class="sidebar-recent__info-title">Pendant lamp</p>
+                                        <p class="sidebar-recent__info-rating" data-rateyo-rating="4"></p>
+                                        <p class="sidebar-recent__info-price">23<span>$</span></p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="product_content"></div>
