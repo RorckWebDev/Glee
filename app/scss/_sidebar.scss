@@ -98,53 +98,6 @@
         display: flex;
         justify-content: space-between;
     }
-    &-brand
-    {
-        @extend %rub-r;
-    
-    }
-    &-brand__btn
-    {
-        width: 270px;
-        height: 43px;
-        border-radius: 5px;
-        border: none;
-        background-color: #fff;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 15px;
-        
-        
-        &:hover
-        {
-            background-color: rgba($color: #a3bbc8, $alpha: 0.2);
-            .sidebar-brand__span
-            {
-                color: #243f4d;
-            }
-        }
-    }
-    &-brand__span
-    {
-        width: 35px;
-        text-align: center;
-        font-size: 16px;
-        color: #b3b3b3;
-        position: relative;
-        &::before
-        {
-            content: '(';
-            color: inherit;
-        }
-        &::after
-        {
-            content: ')';
-            color: inherit;
-        }
-
-    }
     &-recent__items
     {
         display: flex;
@@ -180,6 +133,60 @@
         font-size: 15px;
     } 
 }
+/*BRAND filter*/
+
+.sidebar-brand
+{
+    &__inputitem
+    {
+        @extend %rub-r;
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+    
+    }
+    &__input
+    {
+        @extend %checkbox-hidden;
+        &:checked + .sidebar-brand__input-spanbox
+	    {	
+            transition: all 0.3s;
+		    background-color: #a3bbc8;
+            color: #243f4d;
+	    }
+    }
+    &__input-spanbox
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 43px;
+        color: #b3b3b3;
+        padding-left: 15px;
+        padding-right: 24px;
+        border-radius: 5px;
+        user-select: none;
+        
+    }
+    &__spannum
+    {
+        &::before
+        {
+            content: '(';
+            position: relative;
+            top: -1px;
+        }
+        &::after
+        {
+            content: ')';
+            position: relative;
+            top: -1px;
+        }
+    }
+}
+
+
+
 /*Slider Price filter*/
 
 .irs-min,.irs-max,.irs-from,.irs-to,.irs-single
