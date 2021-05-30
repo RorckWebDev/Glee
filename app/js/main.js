@@ -1,4 +1,14 @@
 $(function (){
+    $('.dropmenu__input').on('click', function () {
+       
+        $('.product_content').toggleClass('block-line');
+        
+    });
+
+
+
+
+
     $(".sidebar-price__form-input").ionRangeSlider({
         type: "double",
         onStart: function (data) 
@@ -26,5 +36,6 @@ $(function (){
         autoplay: true
     });
     var mixer = mixitup('.catalog__list');
+    
 
 });
