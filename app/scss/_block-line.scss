@@ -1,0 +1,128 @@
+.block-line
+{
+    .product_content
+    {
+        &__card-rating,
+        &__card-text,
+        &__card-btnbox
+        {
+            display: block;
+        }
+    }
+    @extend %rub-r;
+    width: 875px;
+ 
+    .catalog__list-item
+    {
+        display: flex;
+        width: 100%;
+        height: 501px;
+        padding: 0;
+    }
+    .product_content__card
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .product_content__card-img
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 501px;
+        background-color: rgba(255,255,255,0.96);
+        border: 2px solid #f2f2f2;
+        margin-right: 55px;
+        
+    }
+    .product_content__card-img img
+    {
+        max-width: 323px;
+        width: 100%;
+        max-height: 340px;
+        height: auto;  
+        object-fit: contain;
+    }
+    .product_content__card-description
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        height: 501px;
+    }
+    .product_content__card-text
+    {
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        max-width: 410px;
+        margin-bottom: 40px;
+    }
+    .product_content__card-title
+    {
+        @extend %rub-r;
+        font-size: 40px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #333333;
+        margin-bottom: 25px;
+    }
+    .product_content__card-rating
+    {
+        margin-bottom: 37px;
+    }
+    .product_content__card-price
+    {
+        @extend %rub-r;
+        font-size: 30px;
+        line-height: 45px;
+        color: #333333;
+        
+    }
+    .product_content__card-btnbox
+    {
+        display: flex;
+    }
+    .product_content__card-btn
+    {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0px 6px 47px 3px rgba(37,37,37,0.05);
+        & svg 
+        {
+            path
+                {
+                   fill:#a3bbc8 ; 
+                }
+        }
+            
+    }
+    .product_content__card-btn--active
+    {
+        background-color: #a3bbc8;
+        & svg
+        {
+            path
+                {
+                   fill: #fff; 
+                }
+        }
+    }
+    .product_content__card-btn + .product_content__card-btn
+    {
+        margin-left: 11px;
+    }
+    .catalog__list-item-hover
+    {
+        display: none;
+    }
+
+}
