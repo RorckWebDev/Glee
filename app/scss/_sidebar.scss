@@ -31,7 +31,7 @@
     {
         display: block;
         cursor: pointer;
-        padding-right: 22px;
+ 
         margin-bottom: 5px;
         
        
@@ -48,11 +48,12 @@
     }
     &__input-spanbox
     {
+        @extend %rub-r;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 43px;
-        color: #b3b3b3;
+        color: #243f4d;;
         padding-left: 15px;
         padding-right: 24px;
         border-radius: 5px;
@@ -148,6 +149,7 @@
         font-size: 16px;
         margin-bottom: 5px;
         display: block;
+        cursor: pointer;
     
     }
     &__input
@@ -172,6 +174,10 @@
         border-radius: 5px;
         user-select: none;
         
+    }
+    &__spanname
+    {
+        color: #243f4d;
     }
     &__spannum
     {
