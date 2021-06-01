@@ -1,11 +1,39 @@
 $(function (){
-    $('.dropmenu__input').on('click', function () {
-       
-        $('.product_content').toggleClass('block-line');
+
+    $('.detalis-tabs__top-link').on('click', function(a){
+        a.preventDefault();
+        $('.detalis-tabs__top-link').removeClass('top-link--active');
+        $(this).addClass('top-link--active');
+
+        $('.detalis-tabs__content-box').removeClass('content-box--active');
+        $($(this).attr('href')).addClass('content-box--active');
+    });
+    $('.detalis-slider__inner').slick({
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+    });
+    // $('.detalis-main__images--small').slick({
+    //     vertical: true,
+    //     asNavFor: '.detalis-main__images--big',
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     focusOnSelect: true
+    // });
+    // $('.detalis-main__images--big').slick({
+    //     asNavFor: '.detalis-main__images--small',
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
         
+    // });
+   
+
+
+    $('.dropmenu__input').on('click', function () {
+    $('.product_content').toggleClass('block-line');  
     });
 
-
+    $('.number-input').styler();
 
 
 

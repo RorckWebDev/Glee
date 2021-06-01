@@ -3,12 +3,13 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-@import 'test';
+@import 'sidebar';
+@import 'details';
 @import 'block-line';
+@import 'test';
 
 @import 'pagination';
 @import 'header';
-@import 'sidebar';
 @import 'footer';
 
 
@@ -564,6 +565,11 @@ ul .slick-active button
         &-img
         {
             display: block;
+            width: 370px;
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
         &-news
         {
