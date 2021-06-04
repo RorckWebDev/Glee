@@ -13,19 +13,23 @@ $(function (){
         slidesToShow: 4,
         slidesToScroll: 1,
     });
-    // $('.detalis-main__images--small').slick({
-    //     vertical: true,
-    //     asNavFor: '.detalis-main__images--big',
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     focusOnSelect: true
-    // });
-    // $('.detalis-main__images--big').slick({
-    //     asNavFor: '.detalis-main__images--small',
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
+
+
+    $('.detalis-main__images--small').slick({
+        vertical: true,
+        asNavFor: '.detalis-main__images--big',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        focusOnSelect: true
+    });
+    $('.detalis-main__images--big').slick({
+        asNavFor: '.detalis-main__images--small',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true
         
-    // });
+    });
    
 
 

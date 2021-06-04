@@ -1,56 +1,3 @@
-// .detalis-main
-// {
-//     &__inner
-//     {
-//         display: flex;
-//         justify-content: space-between;
-//     }
-//     &__images
-//     {
-//         width: 550px;
-//         position: relative;
-//         display: flex;
-//     }
-//     &__images--small
-//    {
-//        height: 530px;
-//    }
-//     &__img--small
-//     {
-//         width: 138px !important;
-//         height: 160px !important;
-//         background-color: rgba(255,255,255,0.96);
-//         border: 2px solid #f2f2f2;
-
-//         img
-//         {
-//             width: 135px;
-//             height: 155px;
-//             object-fit: contain;
-//         }
-//         & + .detalis-main__img--small
-//         {
-//             margin-top: 25px;
-//         }
-//     }
-//     &__images--big
-//     {
-//         width: 387px;
-//         height: 530px;
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         background-color: rgba(255,255,255,0.96);
-//         border: 2px solid #f2f2f2;
-//     }
-//     &__content
-//     {
-//         width: 550px;
-        
-//     }
-// }
-
-
 .detalis-main
 {   
     @extend %rub-r;
@@ -59,22 +6,24 @@
     &__inner
     {
         display: flex;
+        justify-content: space-between;
     }
     &__images
     {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 70px;
+        width: 550px;
+        position: relative;
     }
     &__img--small
     {
-        width: 138px;
+        width: 138px !important;
         height: 160px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1px;
+        margin-bottom: 24px;
         background-color: rgba(255,255,255,0.96);
         border: 2px solid #f2f2f2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-right: 25px;
         img 
         {
@@ -89,12 +38,21 @@
         height: 530px;
         background-color: rgba(255,255,255,0.96);
         border: 2px solid #f2f2f2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 63px 77px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        img 
+        {
+            object-fit: cover;
+            width: 233px;
+            height: 405px;
+        }
+
     }
     &__content
     {
+        width: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
