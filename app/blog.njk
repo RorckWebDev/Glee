@@ -12,34 +12,7 @@
 <body>
     <div class="wrapper">
         <header class="header mb-120">
-              <div class="header-top">
-    <a class="logo" href="#"><img src="images/logo.svg" alt="logo icon" class="logo-img">Glee.</a>
-    <nav class="header__menu">
-        <ul class="menu-list">
-            <li class="menu-list-item"><a class="menu-list-link" href="#">About</a></li>
-            <li class="menu-list-item"><a class="menu-list-link" href="#">Services</a></li>
-            <li class="menu-list-item"><a class="menu-list-link" href="#">Home +</a></li>
-            <li class="menu-list-item"><a class="menu-list-link" href="#">Pages +</a></li>
-            <li class="menu-list-item"><a class="menu-list-link" href="#">News</a></li>
-            <li class="menu-list-item"><a class="menu-list-link" href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="user-nav">
-        <a class="user-nav-link link-search" href="#"><img class="user-nav-img" src="images/search.svg" alt=""></a>
-        <div class="user-nav-link_double-btn">
-            <a class="user-nav-link double-btn-left" href="#1">
-                <img class="user-nav-img" src="images/like.svg" alt="">
-                <span class="user-nav-counter">0</span>
-            </a>
-            <span class="double-btn-divisor"></span>
-            <a class="user-nav-link double-btn-right" href="#2">
-                <img class="user-nav-img" src="images/basket.svg" alt="">
-                <span class="user-nav-counter">0</span>
-            </a>
-        </div>
-        <a class="user-nav-link link-btn" href="#"><img class="user-nav-img" src="images/menu-btn.svg" alt=""></a>
-    </div>
-</div>
+              {% include "app/module/_header/_header-top/_header-top.html" %}
             <div class="header-login">
                 <div class="container">
                     <div class="header-login__inner">
@@ -278,62 +251,7 @@
         </main>
 
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer-top">
-            <div class="footer-top__section">
-                <a class="logo" href="#"><img class="logo-img" src="images/logo.svg" alt="logo icon">Glee.</a>
-                <div class="footer-top__section-adress">ADDRESS: 4772 Wines Lane Houston, TX 77032</div>
-                <a class="footer-top__section-phone" href="tel:+8323475843">Telephone: +832-347-5843</a>
-                <a class="footer-top__section-mail" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
-            </div>
-            <div class="footer-top__section">
-                <h4 class="footer-title">Services</h4>
-                <ul class="footer-top__section-list">
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">About
-                            us</a></li>
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">Return
-                            Policy</a></li>
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">Our
-                            Blog</a></li>
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">Contact
-                            Us</a></li>
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">Terms &
-                            Condition</a></li>
-                </ul>
-            </div>
-            <div class="footer-top__section">
-                <h4 class="footer-title">Account</h4>
-                <ul class="footer-top__section-list">
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">Your
-                            Account</a></li>
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">Checkout</a></li>
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">Login</a>
-                    </li>
-                    <li class="footer-top__section-item"><a class="footer-top__section-link" href="#">Register</a></li>
-                </ul>
-            </div>
-            <div class="footer-top__section">
-                <h4 class="footer-title">newsletter</h4>
-                <p class="footer-top__section-description">
-                    Subscribe by our newsletter and get update protidin.</p>
-                <form action="#" class="footer-top__section-form">
-                    <input class="footer-top__section-form-input" type="email" placeholder="Email address" required>
-                    <button class="footer-top__section-form-btn" type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-copy">
-            <p class="footer-copy-text">©2020 CopyRight Example. All rights reserved.</p>
-            <ul class="footer-copy__list">
-                <li class="footer-copy__list-item"><a class="footer-copy__list-link" href="#">Home</a></li>
-                <li class="footer-copy__list-item"><a class="footer-copy__list-link" href="#">About</a></li>
-                <li class="footer-copy__list-item"><a class="footer-copy__list-link" href="#">Blog</a></li>
-                <li class="footer-copy__list-item"><a class="footer-copy__list-link" href="#">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
+{% include "app/module/_footer/_footer.html" %}
     </div>
 
 

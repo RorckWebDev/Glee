@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.min.css">
+    <title>Glee.</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+
+            {% include "app/module/_header/_header-top/_header-top.html" %}
+            {% include "app/module/_header/_header-slider/_header-slider.html" %}
+            {% include "app/module/_header/_header-bottom/_header-bottom.html" %}
+
+        </header>
+
+
+        <main class="main">
+
+            {% include "app/module/_catalog/_catalog.html" %}
+
+        </main>
+
+            {% include "app/module/_new-design/_new-design.html" %}
+
+            {% include "app/module/_video-block/_video-block.html" %}
+
+            {% include "app/module/_blog-section/_blog-section.html" %}
+
+
+
+
+      
+
+
+
+        {% include "app/module/_footer/_footer.html" %}
+    </div>
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

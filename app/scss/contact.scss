@@ -1,22 +1,29 @@
-.contact
-{
-    &__inner
-    {
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import '../module/_header/header';
+@import '../module/_footer/footer';
+
+
+.contact {
+    &__inner {
         @extend %dms-b;
     }
-    &__inner-top
-    {
+
+    &__inner-top {
         text-align: center;
         margin-bottom: 75px;
     }
-    &__subtitle
-    {   
+
+    &__subtitle {
         font-size: 16px;
         line-height: 20px;
         color: #a3bbc8;
     }
-    &__title
-    {
+
+    &__title {
         font-size: 35px;
         line-height: 57px;
         color: #436372;
@@ -25,16 +32,14 @@
 
 /*contact__box*/
 
-.contact
-{
-    &__box
-    {
+.contact {
+    &__box {
         display: flex;
         justify-content: space-between;
         text-align: center;
     }
-    &__item
-    {
+
+    &__item {
         width: 370px;
         height: 380px;
         background-color: #fbfbfb;
@@ -42,77 +47,76 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
-        &:hover
-        {
+
+        &:hover {
             border: 2px solid #a3bbc8;
-            .contact__item-img
-            {
+
+            .contact__item-img {
                 background-color: #a3bbc8;
             }
-            path
-            {
+
+            path {
                 fill: #ffffff;
             }
         }
     }
-    &__item-img
-    {
+
+    &__item-img {
         width: 80px;
         height: 80px;
-        box-shadow: 0px 6px 57px 0px rgba(37,37,37,0.05);
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 60px; 
+        margin-bottom: 60px;
         transition: all .5s;
     }
+
     &__item-text,
-    &__item-link
-    {
+    &__item-link {
         @extend %rub-r;
         font-size: 16px;
         line-height: 30px;
         color: #565872;
     }
-    &__item-link
-    {
+
+    &__item-link {
         display: block;
     }
-    &__form
-    {
+
+    &__form {
         width: 620px;
     }
-    &__form-loc
-    {
+
+    &__form-loc {
         display: flex;
         justify-content: space-between;
-        .addcomment__input
-        {
+
+        .addcomment__input {
             text-transform: uppercase;
             width: 300px;
-            & + .addcomment__input
-            {
+
+            &+.addcomment__input {
                 margin-left: 16px;
                 margin-bottom: 25px;
             }
         }
-        .addcomment__textarea
-        {
+
+        .addcomment__textarea {
             height: 170px;
             margin-bottom: 27px;
             text-transform: uppercase;
         }
-        .addcomment__btn
-        {
+
+        .addcomment__btn {
             border-radius: 5px;
-            
+
         }
     }
 }
-#map 
-{
+
+#map {
     width: 500px;
     height: 335px;
 }
