@@ -3,9 +3,19 @@ const scss = require('gulp-sass');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
+const nunjucksRender = require('gulp-nunjucks-render');
 const imagemin = require('gulp-imagemin');
+const rename = require('gulp-rename');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+
+
+function nunjucks() {
+    return src('app/*.njk')
+        .pipe(nunjucksRender())
+        .pipe(dest('app'))  
+        .pipe(browserSync.stream())
+}
 
 
 /*Функция которая обновляет браузер при изменениях*/
@@ -20,9 +30,12 @@ function browsersync() {
 
 /*функция отслеживает изменения в scss*/
 function styles(){
-    return src('app/scss/style.scss')
+    return src('app/scss/*.scss')
     .pipe(scss({outputStyle:"compressed"}))/*указываем на сжатие файла сss*/
-    .pipe(concat('style.min.css'))/*переименовываес в мин файл*/
+    /*.pipe(concat('style.min.css'))/*переименовываес в мин файл*/
+    .pipe(rename({
+        suffix : '.min'
+    }))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 10 versions'],
         grid: true
@@ -71,6 +84,7 @@ function image() {
 /*постоянно следит за изменением файла */
 function watching() {
     watch(['app/scss/**/*.scss'], styles);/*Следит за всеми файлами scss */
+    watch(['app/*.njk'], nunjucks);/*Следит за всеми файлами scss */
     watch(['app/js/**/*.js', '!app/js/main.min.js']);/*Следит за измением всех файлом JS  кроме main.min.js*/
     watch(['app/**/*.html']).on('change', browserSync.reload)/*Следит за файлом HTML и при изменение 'change' перезагружает страницу '.reload' */
     
@@ -96,6 +110,7 @@ exports.scripts = scripts;
 exports.browserSync = browsersync;
 exports.watching = watching;/*запуск функции по постоянному отслеживанию*/
 exports.image = image;
+exports.nunjucks = nunjucks;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, image, build);/*Функция выполняются в строго записанном порядке */
-exports.default = parallel(styles,scripts,browsersync,watching);/*Одновременно запускает все функции которые прописаны */
+exports.default = parallel(nunjucks,styles,scripts,browsersync,watching);/*Одновременно запускает все функции которые прописаны */

@@ -1,0 +1,133 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import '../module/_header/header';
+@import '../module/_footer/footer';
+
+
+
+.blog {
+    @extend %dms-b;
+
+    &__inner {
+        background-color: #fff;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-viewall {
+            padding-right: 25px;
+            position: relative;
+
+            &::after {
+                content: '';
+                background: url(../images/arrow-right.svg) no-repeat;
+                position: absolute;
+                width: 7px;
+                height: 12px;
+                top: 4px;
+                right: 0;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 46px;
+
+        &-item {
+            width: 370px;
+            height: 250px;
+            object-fit: cover;
+            position: relative;
+        }
+
+        &-img {
+            display: block;
+            width: 370px;
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        &-news {
+            position: absolute;
+            bottom: -16px;
+            left: 28px;
+            font-size: 16px;
+            line-height: 1;
+            background-color: #a3bbc8;
+            color: #fff;
+            padding: 10px 31px;
+            border-radius: 15px;
+            text-transform: uppercase;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &-box {
+            height: 170px;
+            padding: 36px 27px 0px 28px;
+            background-color: #fff;
+            display: grid;
+            align-content: space-between;
+
+        }
+
+        &-title {
+            display: block;
+            @extend %dms-m;
+            height: 58px;
+            line-height: 1.2;
+            font-size: 18px;
+            color: #262626;
+            padding-left: 2px;
+
+
+        }
+
+        &-box-inner {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            line-height: 30px;
+            padding: 13px 0;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        &-date {
+            display: inline;
+            margin-left: 5px;
+            margin-right: 31px;
+
+        }
+
+    }
+
+}
+
+.sponsors {
+    background-color: #fff7f0;
+    height: 437px;
+
+    &__inner {
+        height: 84px;
+        padding-top: 270px;
+    }
+
+    &__img-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

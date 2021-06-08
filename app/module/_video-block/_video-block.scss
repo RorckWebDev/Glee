@@ -1,0 +1,19 @@
+/*video-block*/
+
+.video-block {
+    background: url(../images/video-bg-popup.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0;
+
+    &__btn-play {
+        background: none;
+        border: none;
+        width: 127px;
+        height: 127px;
+        cursor: pointer;
+    }
+}
