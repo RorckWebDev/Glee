@@ -1,11 +1,14 @@
 .header-top {
     max-width: 1800px;
+    position: relative;
     height: 144px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 15px;
     margin: 0 auto;
+
+
 }
 
 .logo {
@@ -326,6 +329,144 @@ ul .slick-active button {
         font-size: 16px;
         line-height: 30px;
         color: #585858;
+    }
+
+}
+
+.menu__btn {
+    display: none;
+}
+
+
+
+/*********hamburger-menu*************/
+
+
+
+
+
+@media (max-width: 1200px) {
+    .header__menu {
+        // display: none;
+        position: absolute;
+        top: 0%;
+        left: 0;
+        right: 0;
+        transform: translateY(-500px);
+        transition: all 0.3s;
+        text-align: center;
+        z-index: 999;
+        height: 500px;
+    }
+
+    .menu-list {
+        flex-direction: column;
+
+
+    }
+
+    .menu-list-item {
+        margin: 25px 0;
+        font-size: 36px;
+    }
+
+    .header__menu--active {
+
+        transform: translateY(200px);
+        width: auto;
+        transition: all 0.3s;
+        background-color: #fff;
+    }
+
+    .menu__btn {
+        display: block;
+        width: 40px;
+        height: 30px;
+        background: transparent;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        border: none;
+        order: 1;
+        padding: 0;
+
+        span {
+            width: 100%;
+            height: 3px;
+            background-color: rgb(163, 187, 200);
+        }
+
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 3px;
+            background-color: rgb(163, 187, 200);
+        }
+
+        &::after {
+            top: 0;
+        }
+
+        &::before {
+            bottom: 0;
+        }
+    }
+
+    .header-top {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+}
+
+.menu-list-item:hover {
+
+    transform: none;
+    font-size: 36px;
+    box-shadow: none;
+}
+
+@media (max-width: 850px) {
+    .footer-top {
+        flex-wrap: wrap;
+    }
+
+    .footer-top__section {
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width: 587px) {
+    .user-nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu__btn {
+        order: 0;
+    }
+}
+
+@media (max-width: 347px) {
+
+    .double-btn-left .user-nav-counter {
+        margin-left: 10px;
+    }
+
+    .double-btn-right .user-nav-counter {
+        margin-left: 15px;
+    }
+
+    .user-nav-counter {
+        margin-top: 0;
+        top: 6px;
     }
 
 }

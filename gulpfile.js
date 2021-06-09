@@ -83,8 +83,8 @@ function image() {
 
 /*постоянно следит за изменением файла */
 function watching() {
-    watch(['app/scss/**/*.scss'], styles);/*Следит за всеми файлами scss */
-    watch(['app/*.njk'], nunjucks);/*Следит за всеми файлами scss */
+    watch(['app/**/*.scss'], styles);/*Следит за всеми файлами scss */
+    watch(['app/*.njk'], nunjucks);/*Следит за всеми файлами */
     watch(['app/js/**/*.js', '!app/js/main.min.js']);/*Следит за измением всех файлом JS  кроме main.min.js*/
     watch(['app/**/*.html']).on('change', browserSync.reload)/*Следит за файлом HTML и при изменение 'change' перезагружает страницу '.reload' */
     

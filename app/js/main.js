@@ -1,5 +1,10 @@
 $(function (){
 
+    $('.menu__btn').on('click', function () {
+        $('.header__menu').toggleClass('header__menu--active');
+        
+    });
+
     $('.detalis-tabs__top-link').on('click', function(a){
         a.preventDefault();
         $('.detalis-tabs__top-link').removeClass('top-link--active');
