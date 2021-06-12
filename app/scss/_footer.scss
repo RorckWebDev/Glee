@@ -89,33 +89,3 @@
         margin-left: 15px;
     }
 }
-
-
-
-@media (max-width: 850px) {
-    .footer-top {
-        flex-wrap: wrap;
-    }
-
-    .footer-top__section {
-        margin-right: 30px;
-    }
-    .footer-copy {
-        flex-wrap: wrap;
-    }
-
-}
-@media (max-width: 614px)
-{
-    .footer-copy {
-        justify-content: center !important;
-    }
-}
-
-
-
-
-
-
-
-

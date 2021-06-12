@@ -7,35 +7,11 @@
 @import '../module/_footer/footer';
 
 /*Login page*/
-.header-login {
-    background-color: #edf1f4;
-    height: 125px;
 
-    &__inner {
-        padding-top: 35px;
-        text-align: center;
-    }
-}
 
-.top-title {
-    @extend %rub-l;
-    font-size: 36px;
-    line-height: 24px;
-    color: #1d3658;
-    margin-bottom: 10px;
-}
 
-.login-page__sponsors {
-    background-color: #fff7f0;
-    padding: 82px 89px;
 
-    &__img-box {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
 
-}
 
 .login-block {
     max-width: 470px;
