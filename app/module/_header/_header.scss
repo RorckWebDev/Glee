@@ -679,7 +679,10 @@ ul .slick-active button {
 
 }
 @media (max-width: 347px) {
-
+    .header-top
+    {
+        padding: 0 5px;
+    }
     .menu-list-item {
         font-size: 26px;
     }

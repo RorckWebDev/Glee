@@ -5,8 +5,11 @@
 @import 'global';
 @import '../module/_header/header';
 @import '../module/_footer/footer';
+@import '../module/_catalog/catalog';
+@import '../module/_blog-section/blog-section';
 
 .detalis-main {
+    overflow: hidden;
     @extend %rub-r;
     color: #333333;
     margin-bottom: 100px;
@@ -336,5 +339,57 @@
         line-height: 30px;
         letter-spacing: 0.075em;
         color: #ffffff;
+    }
+}
+
+@media (max-width: 1160px) {
+    .detalis-main__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-detalis__sliderblock {
+        display: none;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .detalis-main__content
+    {
+        width: 100%;
+    }
+    .detalis-tabs__top-link+.detalis-tabs__top-link
+    {
+        margin-left: 0;
+    }
+    .detalis-tabs__top
+    {
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+}
+
+@media (max-width: 587px) {
+
+    
+    .detalis-main__images,
+    .slick-vertical .slick-slide {
+        display: none;
+    }
+    .detalis-main__content-title
+    {
+        margin-top: 10px;
+    }
+
+
+    .num-input
+    {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .section-btn
+    {
+        width: 100%;
     }
 }
