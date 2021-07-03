@@ -123,6 +123,8 @@
     .catalog__list-item-hover
     {
         display: none;
+        filter: drop-shadow();
     }
 
 }
+

@@ -1,36 +1,33 @@
-.blog-page
-{
-    &__inner
-    {
+.blog-page {
+    &__inner {
         display: flex;
         justify-content: space-between;
     }
-    &__content
-    {
+
+    &__content {
         @extend %rub-r;
         max-width: 830px;
     }
-    &__contentbox
-    {
+
+    &__contentbox {
         margin-bottom: 24px;
     }
-    &__content-imagesbox
-    {
+
+    &__content-imagesbox {
         position: relative;
         height: 501px;
         margin-bottom: 40px;
     }
-    &__image
-    {
-        img
-        {
+
+    &__image {
+        img {
             width: 830px;
             height: 501px;
             object-fit: cover;
         }
     }
-    &__author
-    {
+
+    &__author {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,14 +41,14 @@
         line-height: 30px;
         color: #ffffff;
     }
-    &__date
-    {
+
+    &__date {
         margin-right: 24px;
         padding-left: 18px;
         position: relative;
         text-transform: uppercase;
-        &::before
-        {
+
+        &::before {
             content: '';
             position: absolute;
             background: url(../images/blog/icon/calendar-icon.svg) no-repeat center;
@@ -61,13 +58,13 @@
             top: 7px;
         }
     }
-    &__name
-    {
+
+    &__name {
         padding-left: 18px;
         position: relative;
         text-transform: uppercase;
-        &::before
-        {
+
+        &::before {
             content: '';
             position: absolute;
             background: url(../images/blog/icon/user-icon.svg) no-repeat center;
@@ -77,31 +74,31 @@
             top: 7px;
         }
     }
-    &__title
-    {
+
+    &__title {
         font-size: 36px;
         line-height: 26px;
         color: #333333;
         margin-bottom: 34px;
     }
-    &__description
-    {
+
+    &__description {
         max-width: 795px;
         font-size: 16px;
         line-height: 30px;
         color: #243f4d;
         margin-bottom: 40px;
     }
-    &__link
-    {
+
+    &__link {
         border: 1px solid #a3bbc8;
         padding: 23px 86px 26px 20px;
         font-size: 15px;
         line-height: 12px;
         color: #a3bbc8;
         position: relative;
-        &::after
-        {
+
+        &::after {
             content: '';
             position: absolute;
             background: url(../images/blog/icon/arrow.svg) no-repeat;
@@ -112,19 +109,18 @@
         }
     }
 }
-.blog-page__sidebar
-{
-    &-searchbox
-    {
+
+.blog-page__sidebar {
+    &-searchbox {
         width: 270px;
         margin-bottom: 60px;
     }
-    &-search
-    {
+
+    &-search {
         display: flex;
     }
-    &-searchinput
-    {
+
+    &-searchinput {
         padding-left: 15px;
         padding-right: 15px;
         outline: none;
@@ -132,13 +128,16 @@
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
         border-right: none;
-        border-bottom: 1px solid rgba($color: #a3bbc8, $alpha: 0.4);;
-        border-left: 1px solid rgba($color: #a3bbc8, $alpha: 0.4);;
-        border-top: 1px solid rgba($color: #a3bbc8, $alpha: 0.4);;
+        border-bottom: 1px solid rgba($color: #a3bbc8, $alpha: 0.4);
+        ;
+        border-left: 1px solid rgba($color: #a3bbc8, $alpha: 0.4);
+        ;
+        border-top: 1px solid rgba($color: #a3bbc8, $alpha: 0.4);
+        ;
 
     }
-    &-searchbtn
-    {
+
+    &-searchbtn {
         width: 48px;
         height: 43px;
         margin-left: -1px;
@@ -150,8 +149,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &::after
-        {
+
+        &::after {
             content: '';
             position: absolute;
             background: url(../images/blog/icon/search.svg) no-repeat center center;
@@ -160,28 +159,26 @@
         }
     }
 }
-.blog-page__sidebar-post
-{
-    .sidebar-title::after
-    {
+
+.blog-page__sidebar-post {
+    .sidebar-title::after {
         top: 10px;
 
     }
 }
-.recent-post
-{
+
+.recent-post {
     @extend %rub-r;
-    &__item
-    {
+
+    &__item {
         max-width: 270px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 21px;
     }
-    &__item-img
-    {
-        img 
-        {
+
+    &__item-img {
+        img {
             width: 71px;
             min-width: 71px;
             height: 71px;
@@ -189,34 +186,33 @@
 
         }
     }
-    &__item-title
-    {
+
+    &__item-title {
         max-width: 179px;
         margin-bottom: 5px;
         font-size: 14px;
         line-height: 20px;
         color: #333333;
     }
-    &__item-date
-    {
+
+    &__item-date {
         font-size: 12px;
         line-height: 30px;
         color: #9a9a9a;
         position: relative;
-        svg 
-        {
-            margin-right: 5px; 
+
+        svg {
+            margin-right: 5px;
         }
     }
-    
+
 }
 
-.blog-page .pagination
-{
+.blog-page .pagination {
     margin-top: 70px;
     justify-content: flex-start;
-    .pagination__list li:first-child
-    {
+
+    .pagination__list li:first-child {
         margin-left: 0;
     }
 
@@ -225,65 +221,64 @@
 /*Blog-details*/
 
 
-.blog-details
-{
-    &__article
-    {   border-bottom: 2px solid #ebebeb;
-        &-text
-        {
+.blog-details {
+    &__article {
+        border-bottom: 2px solid #ebebeb;
+
+        &-text {
             color: #243f4d;
             @extend %rub-r;
-            h3
-            {
+
+            h3 {
                 @extend %rub-m;
                 font-size: 16px;
                 line-height: 30px;
             }
-            h4,h5
-            {
+
+            h4,
+            h5 {
                 @extend %rub-m;
                 font-size: 18px;
                 line-height: 30px;
                 color: #243f4d;
                 line-height: 30px;
             }
-            h4 
-            {
+
+            h4 {
                 margin-top: 75px;
             }
-            h5
-            {
+
+            h5 {
                 margin-top: 45px;
             }
-            p 
-            {
+
+            p {
                 font-size: 16px;
                 color: #565872;
                 line-height: 30px;
                 margin-top: 20px;
                 margin-bottom: 43px;
             }
-            blockquote
-            {
+
+            blockquote {
 
                 font-size: 16px;
                 line-height: 30px;
                 padding: 25px 40px 0;
                 margin-bottom: 45px;
-                background-color:rgba($color: #a3bbc8, $alpha: 0.2) ;
+                background-color: rgba($color: #a3bbc8, $alpha: 0.2);
                 border-left: 7px solid #a3bbc8;
             }
-            figcaption
-            {
+
+            figcaption {
                 margin-top: 22px;
                 padding-left: 40px;
                 line-height: 1;
                 padding-bottom: 24px;
                 font-size: 16px;
                 position: relative;
-                
-                &::after
-                {
+
+                &::after {
                     content: '';
                     position: absolute;
                     left: 0;
@@ -295,24 +290,24 @@
             }
         }
     }
-    &__article-img--left
-    {
+
+    &__article-img--left {
         width: 323px;
         height: 210px;
         object-fit: cover;
         float: left;
         margin-right: 30px;
     }
-    &__article-img--right
-    {
+
+    &__article-img--right {
         width: 323px;
         height: 210px;
         object-fit: cover;
         margin-left: 30px;
         float: right;
     }
-    &__persona
-    {
+
+    &__persona {
         @extend %rub-r;
         font-size: 16px;
         margin-top: 24px;
@@ -322,22 +317,21 @@
         padding-bottom: 13px;
         margin-bottom: 67px;
     }
-    &__persona-info
-    {
+
+    &__persona-info {
         max-width: 300px;
         width: 100%;
     }
-    &__persona-img
-    {
+
+    &__persona-img {
         float: left;
         margin-right: 28px;
         width: 76px;
         height: 76px;
         object-fit: cover;
     }
-   
-    &__persona-name
-    {
+
+    &__persona-name {
         @extend %rub-m;
         font-size: 18px;
         line-height: 1;
@@ -345,113 +339,114 @@
         padding-top: 10px;
         margin-bottom: 10px;
     }
-    &__persona-profession
-    {
-        
+
+    &__persona-profession {
+
         line-height: 30px;
         color: #666666;
     }
-    &__persona-tags
-    {
+
+    &__persona-tags {
         margin-bottom: 26px;
-      
+
     }
-    &__persona-item
-    {
+
+    &__persona-item {
         padding-top: 10px;
     }
-    &__persona-link
-    {
+
+    &__persona-link {
         color: #999999;
         margin-left: 20px;
     }
-    &__persona-sociallink
-    {
+
+    &__persona-sociallink {
         margin: 0 10px;
     }
 
-   
+
 }
+
 /*comments*/
 
 
-.comments
-{
+.comments {
     color: #436372;
     @extend %rub-b;
-    .resend
-    {
+
+    .resend {
         max-width: 700px;
         margin-left: auto;
         padding-top: 30px;
         margin-bottom: 30px;
         border-top: 1px solid #e0e0e0;
-        border-bottom: 1px solid #e0e0e0;;
+        border-bottom: 1px solid #e0e0e0;
+        ;
     }
-    &-title
-    {
+
+    &-title {
         font-size: 24px;
         line-height: 1px;
         margin-bottom: 60px;
     }
-    &__title-counter
-    {
+
+    &__title-counter {
         margin-right: 3px;
     }
-    &__top
-    {
+
+    &__top {
         display: flex;
         // justify-content: space-between;
     }
-    &__top-avatar
-    {
+
+    &__top-avatar {
         margin-right: 30px;
         min-width: 100px;
         height: 100px;
 
     }
-    &__img
-    {
+
+    &__img {
         width: 100px;
         height: 100px;
-        object-fit: cover;    
+        object-fit: cover;
     }
+
     // &__content
     // {
     //     border-bottom: 1px solid #e0e0e0;
     // }
-    &__name
-    {
+    &__name {
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
-        font-size: 16px;     
+        font-size: 16px;
     }
-    &__date
-    {
+
+    &__date {
         @extend %rub-r;
         font-size: 14px;
         color: #9e9e9e;
     }
 
 }
-.comment
-{
+
+.comment {
     @extend %rub-r;
     margin-bottom: 20px;
     font-size: 16px;
     color: #565872;
-    &-reply
-    {
+
+    &-reply {
         @extend %rub-r;
-        display:inline-block;
+        display: inline-block;
         margin-bottom: 30px;
         font-size: 14px;
         color: #526278;
         padding-right: 16px;
         position: relative;
-        &::after
-        {
+
+        &::after {
             content: '';
             position: absolute;
             background: url(../images/blog/icon/Reply.svg) no-repeat;
@@ -466,38 +461,36 @@
 
 /*Form add comment*/
 
-.addcomment
-{
+.addcomment {
     @extend %rub-r;
     font-size: 16px;
     line-height: 36px;
-    .comments-title
-    {
+
+    .comments-title {
         margin-top: 67px;
         margin-bottom: 50px;
     }
-    &__input
-    {
+
+    &__input {
         position: relative;
         width: 398px;
         height: 50px;
         border: 1px solid rgba($color: #000000, $alpha: 0.1);
         padding-left: 20px;
         padding-right: 45px;
-        margin-bottom: 20px;      
-        &::placeholder
-        {
+        margin-bottom: 20px;
+
+        &::placeholder {
             color: #999999;
         }
-        & + .addcomment__input
-        {
+
+        &+.addcomment__input {
             margin-left: 30px;
         }
-        
+
     }
-   
-    &__textarea
-    {
+
+    &__textarea {
         min-width: 100%;
         height: 120px;
         border: 1px solid rgba($color: #000000, $alpha: 0.1);
@@ -505,14 +498,14 @@
         padding-left: 20px;
         padding-right: 45px;
         margin-bottom: 40px;
-        &::placeholder
-        {
+
+        &::placeholder {
             color: #999999;
         }
 
     }
-    &__btn
-    {
+
+    &__btn {
         width: 190px;
         height: 50px;
         background-color: #a3bbc8;
@@ -525,4 +518,10 @@
         color: #ffffff;
     }
 
+}
+
+@media (max-width: 1200px) {
+    .blog-page__sidebar-item .sidebar-category {
+        display: none;
+    }
 }

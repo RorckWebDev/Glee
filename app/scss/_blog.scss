@@ -526,3 +526,9 @@
     }
 
 }
+
+@media (max-width: 1200px) {
+    .blog-page__sidebar-item .sidebar-category {
+        display: none;
+    }
+}
